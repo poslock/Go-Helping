@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/dark_bg">
+
+    <!-- Toolbar Neon -->
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp"
+        android:gravity="center_vertical"
+        android:background="@color/dark_surface"
+        android:elevation="8dp">
+
+        <View
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/bg_avatar_neon"
+            android:layout_marginEnd="12dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="GoHelping"
+            android:textColor="@color/neon_purple"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:shadowColor="@color/neon_purple"
+            android:shadowRadius="6" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_neon_border"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="4dp">
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:background="@drawable/bg_avatar_neon"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="6dp" />
+
+            <TextView
+                android:id="@+id/tvUserPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 GD"
+                android:textColor="@color/neon_yellow"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- FrameLayout untuk konten -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvQuests"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:padding="8dp" />
+
+        <!-- Empty State -->
+        <LinearLayout
+            android:id="@+id/emptyStateLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📋"
+                android:textSize="64sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Belum ada quest tersedia"
+                android:textSize="18sp"
+                android:textColor="@color/text_secondary"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quest yang tersedia akan muncul di sini"
+                android:textSize="14sp"
+                android:textColor="@color/text_dim"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:id="@+id/btnRefresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Refresh"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_button_neon"
+                android:layout_marginTop="24dp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- Bottom Navigation Neon -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/dark_surface"
+        app:menu="@menu/bottom_nav_menu"
+        app:labelVisibilityMode="labeled"
+        app:itemIconTint="@color/neon_cyan"
+        app:itemTextColor="@color/neon_cyan"
+        app:itemRippleColor="@color/neon_purple"
+        android:elevation="12dp" />
+</LinearLayout>

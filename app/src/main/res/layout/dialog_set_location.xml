@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Untuk user lama yang belum punya kota/kelurahan -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dark_surface"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="📍 Di mana kamu tinggal?"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="16dp"
+        android:text="Supaya kamu hanya melihat quest di sekitarmu."
+        android:textColor="@color/text_secondary"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/etDlgKota"
+        style="@style/GhInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kota / Kabupaten"
+        android:inputType="textCapWords" />
+
+    <EditText
+        android:id="@+id/etDlgKelurahan"
+        style="@style/GhInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="Kelurahan / Desa"
+        android:inputType="textCapWords" />
+</LinearLayout>

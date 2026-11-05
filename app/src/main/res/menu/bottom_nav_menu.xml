@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:title="Home"
+        android:icon="@android:drawable/ic_menu_compass" />
+    <item
+        android:id="@+id/nav_my_quests"
+        android:title="Quest Saya"
+        android:icon="@android:drawable/ic_menu_manage" />
+    <item
+        android:id="@+id/nav_add_quest"
+        android:title="Buat Quest"
+        android:icon="@android:drawable/ic_menu_add" />
+    <item
+        android:id="@+id/nav_chat"
+        android:title="Chat"
+        android:icon="@android:drawable/ic_menu_send" />
+    <item
+        android:id="@+id/nav_profile"
+        android:title="Profil"
+        android:icon="@android:drawable/ic_menu_edit" />
+</menu>

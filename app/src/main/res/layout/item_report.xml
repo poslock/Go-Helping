@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_margin="6dp"
+    android:background="@drawable/bg_neon_glow"
+    android:elevation="4dp">
+
+    <TextView
+        android:id="@+id/tvReportQuestTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quest Title"
+        android:textColor="@color/text_primary"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvReportReason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alasan: xxx"
+        android:textColor="@color/red"
+        android:textSize="13sp"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/tvReporterId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pelapor: xxx"
+        android:textColor="@color/text_secondary"
+        android:textSize="11sp"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/tvReportedUserId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terlapor: xxx"
+        android:textColor="@color/text_secondary"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/tvReportDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tanggal"
+        android:textColor="@color/text_dim"
+        android:textSize="10sp"
+        android:layout_marginTop="4dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp">
+
+        <Button
+            android:id="@+id/btnBlockUser"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:text="🔒 Blokir"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:background="@drawable/bg_button_neon"
+            android:layout_marginEnd="4dp" />
+
+        <Button
+            android:id="@+id/btnChatUser"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:text="💬 Chat"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:background="@drawable/bg_button_neon"
+            android:layout_marginEnd="4dp" />
+
+        <Button
+            android:id="@+id/btnDismissReport"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:text="✅ Tutup"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:background="@drawable/bg_button_neon" />
+    </LinearLayout>
+</LinearLayout>

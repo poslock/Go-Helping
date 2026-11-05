@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "245972121262",
+    "project_id": "go-helping",
+    "storage_bucket": "go-helping.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:245972121262:android:4d1d4449602d4ac1861f3f",
+        "android_client_info": {
+          "package_name": "com.gohelping"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3MPvaMEvj4e6qIQhsNpmKRmo0RRyyS2U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

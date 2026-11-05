@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#12102A">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buat Quest Baru"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:layout_marginBottom="20dp" />
+
+    <!-- ID: etQuestTitle -->
+    <EditText
+        android:id="@+id/etQuestTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Judul Quest"
+        android:textColorHint="#8B88B0"
+        android:textColor="#FFFFFF" />
+
+    <!-- ID: etQuestDesc -->
+    <EditText
+        android:id="@+id/etQuestDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Deskripsi"
+        android:textColorHint="#8B88B0"
+        android:textColor="#FFFFFF" />
+
+    <!-- ID: etLocation -->
+    <EditText
+        android:id="@+id/etLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Lokasi (Contoh: Blok M)"
+        android:textColorHint="#8B88B0"
+        android:textColor="#FFFFFF" />
+
+    <!-- ID: etReward -->
+    <EditText
+        android:id="@+id/etReward"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Reward (GD)"
+        android:inputType="number"
+        android:textColorHint="#8B88B0"
+        android:textColor="#FFFFFF" />
+
+    <!-- ID: btnPostQuest -->
+    <Button
+        android:id="@+id/btnPostQuest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Post Quest"
+        android:backgroundTint="#C040FF" />
+
+    <Button
+        android:id="@+id/btnViewMyQuests"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quest Saya"
+        android:backgroundTint="#C040FF"
+        android:layout_gravity="end"
+        android:layout_margin="16dp"/>
+</LinearLayout>

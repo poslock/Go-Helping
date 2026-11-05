@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_bg">
+
+    <!-- Logo Area -->
+    <LinearLayout
+        android:id="@+id/logoSection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Logo Circle dengan Neon Glow -->
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@drawable/bg_avatar_neon">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="G"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <!-- Nama App -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Go"
+                android:textColor="@color/neon_purple"
+                android:textStyle="bold"
+                android:textSize="28sp"
+                android:shadowColor="@color/neon_purple"
+                android:shadowRadius="10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="helping"
+                android:textColor="@color/neon_cyan"
+                android:textSize="14sp"
+                android:shadowColor="@color/neon_cyan"
+                android:shadowRadius="6" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Hero Section -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Let's Get"
+            android:textColor="@color/text_primary"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:shadowColor="@color/neon_purple"
+            android:shadowRadius="8" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Started!"
+            android:textColor="@color/neon_purple"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:shadowColor="@color/neon_pink"
+            android:shadowRadius="12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Side quest IRL — bantu dan sebarkan kebaikan"
+            android:textColor="@color/text_dim"
+            android:textSize="13sp"
+            android:layout_marginTop="12dp"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <!-- Fragment Container (untuk form login) -->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomSection" />
+
+    <!-- Bottom Section -->
+    <LinearLayout
+        android:id="@+id/bottomSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:paddingBottom="40dp"
+        android:gravity="center">
+
+        <!-- Tombol Masuk dengan Neon Glow -->
+        <Button
+            android:id="@+id/btnMasuk"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="MASUK"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:background="@drawable/bg_button_neon"
+            android:layout_marginBottom="16dp"
+            android:elevation="8dp"
+            android:stateListAnimator="@null" />
+
+        <!-- Register Link -->
+        <TextView
+            android:id="@+id/tvRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belum punya akun? ✨ Daftar"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp"
+            android:clickable="true"
+            android:focusable="true" />
+    </LinearLayout>
+
+    <!-- Decorative Elements -->
+    <View
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-30dp"
+        android:layout_marginEnd="-30dp"
+        android:background="@drawable/bg_decorative_circle"
+        android:alpha="0.3" />
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginStart="-20dp"
+        android:background="@drawable/bg_decorative_circle"
+        android:alpha="0.2" />
+</RelativeLayout>
